@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube App-1</title>
+    <style>
+
+        input{
+            width: 450px;
+            height: 25px;
+            margin-left: 350px;
+            margin-top: 5px;
+        }
+        button{
+            height: 30px;
+            margin-top: 5px;
+        }
+        #videos{
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-gap:80px;
+            padding: 20px 30px;
+            background-color: rgb(249,249,249);
+            margin: 50px auto;
+        
+        }
+        .main_div{
+            width: 300px;
+            /* margin-left: 10px; */
+
+        }
+        #nav>img{
+            width: 40px;
+            height: 40px;
+           
+        }
+        #nav{
+            display: flex;
+        }
+        #nav>p{
+            font-size: larger;
+            font-weight: bolder;
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img src="/icon/youtube.png" alt="Youtube">
+        <p>YouTube</p>
+        <input type="text" id="query" placeholder="Search">
+        <button onclick="searchVideos()">Search</button>
+        
+    </div>
+    <div id="videos"></div>
+</body>
+</html>
+<script src="/youtube1.js"></script>
